@@ -1,6 +1,4 @@
-.navigation {
-    list-style: none;
-}
+
 
 body {
 
@@ -36,11 +34,11 @@ h3 {
     font-weight: bold;
 }
 
-header {
+header {display: flex;
     background-color: #A1C6D7;
     padding: 30px;
     border-radius: 5px;
-
+justify-content: center;
 }
 
 nav {
@@ -48,6 +46,10 @@ nav {
     padding-top: inherit;
     border-radius: 5px;
 
+
+}
+nav a:hover{
+    background-color: aliceblue;
 }
 
 nav a {
@@ -55,7 +57,7 @@ nav a {
     color: #F7FFF7;
     line-height: 2;
     font-size: 22px;
-
+padding: 20px;;
 }
 
 h3 {
@@ -89,5 +91,6 @@ ul li a {
 }
 
 .modified {
-    color: red;
+    color: black;
 }
+
