@@ -97,12 +97,6 @@ ul li a {
     border: 1px solid grey;
     grid-column: inherit;
 }
-#learning{
-    grid-template-rows: 2/3;
-}
-#information{
-    grid-template-rows: 2/3;
-}
 
 .modified {
     color: black;
