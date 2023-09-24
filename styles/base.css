@@ -1,19 +1,20 @@
 
 
 body {
-
+    margin:auto;
     font-family: 'Montserrat', sans-serif;
     background-color: #F7FFF7;
     text-align: center;
     padding: 20px;
-
+    max-width: 1200px;
+    align-items: center;
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 150px 400px 200px;
-    max-width: 95%;
+    grid-template-rows: 1fr 2fr;
+    max-width: 1000px;
     padding-left: 50px;
 }
 
@@ -38,7 +39,7 @@ header {display: flex;
     background-color: #A1C6D7;
     padding: 30px;
     border-radius: 5px;
-justify-content: center;
+ justify-content: center;
 }
 
 nav {
@@ -48,6 +49,10 @@ nav {
 
 
 }
+ul li a:hover {
+    color: red; /* Change the text color to red on hover */
+    text-decoration: underline; /* Add an underline on hover */
+  }
 
 
 nav a {
@@ -55,8 +60,17 @@ nav a {
     color: #F7FFF7;
     line-height: 2;
     font-size: 22px;
-padding: 20px;;
+    padding: 20px;;
 }
+nav ul {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+nav ul li {
+    text-align: center;
+}
+
 
 h3 {
     background-color: #A1C6D7;
@@ -71,10 +85,6 @@ footer {
 
 }
 
-nav ul li {
-    text-align: center;
-}
-
 ul li,
 ul li a {
     list-style: none;
@@ -86,6 +96,12 @@ ul li a {
     border-radius: 10px;
     border: 1px solid grey;
     grid-column: inherit;
+}
+#learning{
+    grid-template-rows: 2/3;
+}
+#information{
+    grid-template-rows: 2/3;
 }
 
 .modified {
