@@ -10,12 +10,13 @@ header section{
 	text-align: center;
 	padding: 1rem;
 	box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
-	
+	border-radius:5px ;
 }
 main section{
 	border: 1px solid grey;
 	margin: .5rem;
 	box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
 }
 main section p{
 	padding:1rem;
@@ -44,6 +45,13 @@ a {
 img{
 	max-width: 100%; 
     height: auto;
+}
+footer {
+    background-color: #A1C6D7;
+    font-size: 17px;
+    border-radius: 10px;
+    text-align: center;
+
 }
 
 @media screen and (min-width: 640px){
