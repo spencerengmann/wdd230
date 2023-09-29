@@ -37,15 +37,23 @@ h3 {
 
 header {display: flex;
     background-color: #A1C6D7;
-    padding: 30px;
+    padding-top: 30px;
+    
     border-radius: 5px;
- justify-content: center;
+    justify-content: center;
+    align-items: center;
 }
+ img{
+    
+    border-radius: 10px;
+}
+
 
 nav {
     background-color: #343434;
     padding-top: inherit;
     border-radius: 5px;
+    padding-bottom: inherit;
 
 
 }
@@ -62,13 +70,14 @@ nav a {
     font-size: 22px;
     padding: 20px;;
 }
-nav ul {
+nav ul  {
     display:flex;
     flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    
 }
 nav ul li {
-    text-align: center;
+    align-items: center;
 }
 
 
@@ -83,6 +92,11 @@ footer {
     border-radius: 10px;
     ;
 
+}
+
+.active{
+    background-color: grey;
+    
 }
 
 ul li,
@@ -101,4 +115,26 @@ ul li a {
 .modified {
     color: black;
 }
+iframe{
+    width:90%;
+    border-radius: 10px;
+}
+.menu-hide, .menu-show{
+    display: none;
+    background-color: #A1C6D7;
+    border: black;
+    margin: .5rem 0 0 .5rem;
+    border-radius: 5px;
+}
 
+.menu-hide.showing, .menu-show.showing{
+    display: block;
+}
+
+#nav-menu{
+    display: none;
+}
+
+#nav-menu.showing{
+    display: flex;
+}

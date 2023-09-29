@@ -37,13 +37,14 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/base.css" />
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-
+    <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
   </head>
   <body>
     <header>
+      <section>
       <img
         src="images/profilepic.jpg"
         height="180"
@@ -51,15 +52,21 @@
         alt="Picture of me"
       />
       <h1>Spencer Engmann</h1>
+      </section>
     </header>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
+      <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+      <ul id="nav-menu">
+        <li><a class="active" href="#">Home</a></li>
         <li><a href="chamber/siteplan.html">Site Plan</a></li>
         <li><a href="chamber/">Chamber</a></li>
         <li><a href="https://www.byui.edu/" target="_blank">BYU-IDAHO</a></li>
         <li>
-          <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng" target="_blank">Scripture</a>
+          <a
+            href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/2?lang=eng"
+            target="_blank"
+            >Scripture</a
+          >
         </li>
       </ul>
     </nav>
@@ -75,7 +82,13 @@
               Holy Layout</a
             >
           </li>
-          <li>02.<a href="https://spencerengmann.github.io/wdd230/lesson02/design.html"> Design Principles</a></li>
+          <li>
+            02.<a
+              href="https://spencerengmann.github.io/wdd230/lesson02/design.html"
+            >
+              Design Principles</a
+            >
+          </li>
           <li>03.<a href=""></a></li>
           <li>04.<a href=""></a></li>
           <li>05.<a href=""></a></li>
@@ -84,6 +97,16 @@
       <section class="card" id="information">
         <h3>Information</h3>
       </section>
+      <iframe
+        class="maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127066.76303175482!2d-0.335451715672722!3d5.5911881803019154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9084b2b7a773%3A0xbed14ed8650e2dd3!2sAccra%2C%20Ghana!5e0!3m2!1sen!2sus!4v1695764837290!5m2!1sen!2sus"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
     <footer>
       <p>&copy;<span id="currentyear"></span></p>
