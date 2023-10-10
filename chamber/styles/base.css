@@ -1,0 +1,179 @@
+body{
+    font-family:  'Montserrat', sans-serif; 
+    background-color: rgb(249, 245, 245);
+    max-width: 1200px;
+    margin: auto;
+}
+nav,footer,header{
+    background-color:#ffbb33 ;
+}
+header{
+    display: flex;
+}
+header{
+    align-items: center;
+    border-radius: 5px;
+}
+header img{
+    flex:1;
+    border-radius: 10px;
+    padding:5px;
+}
+header h1{
+    flex:2;
+    text-align: center;
+}
+footer{
+    margin:0 auto;
+    text-align: center;
+    padding:1rem;
+}
+nav{
+    border-radius: 5px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row; 
+    padding-inline-start: 0px;
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+}
+nav ul li{
+    align-items: center;
+    flex: 1;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+nav ul li a{
+    display:block;
+    font-size:24px;
+    text-decoration:none;
+    color: black;
+    text-align:center;
+    padding:10px;
+    justify-content: center;
+}
+nav ul li a:hover{
+    background-color:#72AAC0 ;
+    border-radius: 10px;
+}
+.menu-hide, .menu-show{
+
+    display: none;
+
+    background-color:#72AAC0;
+
+    border: black;
+
+    margin: .5rem 0 0 .5rem;
+
+    border-radius: 5px;
+
+}
+
+ 
+
+.menu-hide.showing, .menu-show.showing{
+
+    display: block;
+
+}
+
+ 
+
+#nav-menu{
+
+    display: none;
+
+}
+
+ 
+
+#nav-menu.showing{
+
+    display: flex;
+
+}
+#hero img{
+    width: 100%;
+    border-radius: 10px;
+}
+#hero h2{
+    font-family:'Montserrat Light 300 Italic', sans-serif; 
+    padding:1rem;
+    margin:none;
+}
+button{
+    border-radius: 5px;
+}
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+button[type="submit"] {
+    background-color: #72AAC0;
+    color:black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+#weather{
+    border: 1px solid #ffbb33;
+    border-radius:10px;
+}
+
+#home-main section{
+    text-align: center;
+}
+#home-main section p{
+    padding:1rem;
+}
+#home-main section h2{
+    text-align:center;
+}
+
+footer a{
+    text-decoration: none;
+    
+
+
+}
+
+footer a:hover{
+    background-color: #72AAC0;
+    
+}
+
+

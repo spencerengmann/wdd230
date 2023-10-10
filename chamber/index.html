@@ -1,110 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is going to be the home page for the Accra Chamber of Commerce." />
-    <meta name="author" content="Spencer Engmann"/>
-    <meta
-    property="og:url"
-    content="https://spencerengmann.github.io/wdd230/chamber/index.html"
-  />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is going to be the home page for the Accra Chamber of Commerce." />
+  <meta name="author" content="Spencer Engmann" />
+  <meta property="og:url" content="https://spencerengmann.github.io/wdd230/chamber/index.html" />
   <meta property="og:type" content="website" />
-  <meta
-    property="og:title"
-    content="Accra Chamber Commerce"
-  />
-  <meta
-    property="og:description"
-    content="This is going to be the home page for the Accra Chamber of Commerce."
-  />
-  <meta
-    property="og:image"
-    content="https://spencerengmann.github.io/wdd230/images/profile.jpg"
-  />
+  <meta property="og:title" content="Accra Chamber Commerce" />
+  <meta property="og:description" content="This is going to be the home page for the Accra Chamber of Commerce." />
+  <meta property="og:image" content="https://spencerengmann.github.io/wdd230/images/profile.jpg" />
   <link rel="icon" href="favicon.ico" />
-  <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <script src="scripts/getdates.js" defer></script>
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/hamburger-menu.js" defer></script>
+
+
+
 
 </head>
+
 <body>
-    <header>
-      <section>
-     <a href="https://spencerengmann.github.io/wdd230/chamber/index.html">
-      <img src="images/fire.jpg" width="107" height="100" alt="brand logo"/>
-     </a>
-     <h1>Accra Chamber of Commerce</h1>
-      </section>
-      <nav>
-      <ul id="nav-menu">
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#" target="_blank">Discover</a></li>
-        <li><a href="#" target="_blank">Directory</a></li>
-        <li><a href="#" target="_blank">Join</a></li>
-      </ul>
-      </nav>
-    </header>
-    <main id="home-main">
-      <section class="banner">
-        <img src="images/fire.jpg" alt="banner image" width="800" height="800" >
-        <button>Visit our Events</button>
-      </section>
-      <section class="overlay">
-        <h2>Accra Chamber of Commerce</h2>
-      </section>
-      <section class="signup">
-        <form >
-          <h3> Sign up for our Newsletter</h3>
-          <label for="fullname" >Full Name</label>
-          <input type="text" name="username" required placeholder="John Doe">
-          <label for="email">email address</label>
-          <input type="email" name="useremail" id="useremail" required placeholder="johndoe@gmail.com">
-          <button type="submit">Sign Up</button>
-        </form>
-      </section>
-      <section class="weather">
-        <h3>Information</h3>
-        <p>Accra,Ghana</p>
-        <p>Weather: 90&deg; Sunny</p>
-      </section>
-      <section class="events">
-        <h2>Events</h2>
-        <section >
-          <p>Basic 1</p>
-          <img src="https://placehold.co/400x300" alt="events placeholder"
-        </section>
-        
+  <header>
 
+    <a href="https://spencerengmann.github.io/wdd230/chamber/index.html">
+      <img src="images/fire.jpg" width="107" height="100" alt="brand logo" />
+    </a>
+    <h1>Accra Chamber of Commerce</h1>
+  </header>
+  <nav>
+    <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+   
+    <ul id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html" target="_blank">Discover</a></li>
+      <li><a href="directory.html" target="_blank">Directory</a></li>
+      <li><a href="join.html" target="_blank">Join</a></li>
+    </ul>
+  </nav>
+  
+  <main id="home-main">
+    <section id="hero" class="home-section">
+      <h2>Hero</h2>
+      <img src="images/fire.jpg" alt="banner image" width="800" height="800">
+      <button>Visit our Events</button>
+    </section>
+    <section id="form" class="home-section">
+
+      <form>
+
+        <h3> Sign up for our Newsletter</h3>
+
+        <label for="fullname">Full Name</label>
+
+        <input type="text" name="username" required placeholder="John Doe">
+
+        <label for="email">email address</label>
+
+        <input type="email" name="useremail" id="useremail" required placeholder="johndoe@gmail.com">
+
+        <button type="submit">Sign Up</button>
+
+      </form>
+
+    </section>
+   <section id="weather" class="home-section">
+    <h2>Information</h2>
+
+    <p>Accra,Ghana</p>
+
+    <p>Weather: 90&deg; Sunny</p>
+    </section>
+    <div id="spotlights" class="home-section">
+      <section id="spotlight-1" class="spotlight-card">
+        <h3>spotlight-1</h3>
+        <img src="https://placehold.co/300x240" alt="spotlight 1 placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
+          quam rem deserunt placeat repellendus.</p>
+      </section>
+      <section id="spotlight-2" class="spotlight-card">
+        <h3>Spotlight 2</h3>
+        <img src="https://placehold.co/300x240" alt="spotlight 2 placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
+          quam rem deserunt placeat repellendus.</p>
+      </section>
+      <section id="spotlight-3" class="spotlight-card">
+        <h3>Spotlight 3</h3>
+        <img src="https://placehold.co/300x240" alt="spotlight 3 placeholder">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
+          quam rem deserunt placeat repellendus.</p>
       </section>
 
-    </main>
-    <footer>
-      <section class="info">
-      <p>&copy;<span id="currentyear"></span>- WDD 230| Spencer Engmann</p>
-      
-      <p class="modified">Last Modified: <span id="lastmodified"></span></p>
-      </section>
-      <section class="social">
-        <a href="https://twiter.com"
-              ><img
-                src="https://cdn.glitch.com/ea7b122a-4038-4c8f-a540-ab6b83f33a92%2Ftwitter.png?v=1611946242711"
-                alt="Twitter Icon"
-            ></a>
-            <a href="https://instagram.com">
-              <img
-                src="https://cdn.glitch.com/ea7b122a-4038-4c8f-a540-ab6b83f33a92%2Finstagram.png?v=1611946247014"
-                alt="Instagram icon"
-            ></a>
-            <a href="https://facebook.com">
-              <img
-                src="https://cdn.glitch.com/ea7b122a-4038-4c8f-a540-ab6b83f33a92%2Ffacebook.png?v=1611946260584"
-                alt="Facebook icon"
-            ></a>
-      </section>
-    </footer>
+
+    </div>
+    
+  </main>
+
+  <footer>
+    <hr>
+    <div class="footer-logo">
+      <p><img src="images/fire.jpg" alt="Logo" height="160" width="160"></p>
+    </div>
+    <div class="footer-contact">
+      <p>Accra Chamber of Commerce</p>
+      <p>Independednce Avenue 210, Accra Ghana</p>
+      <p><a href="#">info@accrachamber.org</a></p>
+      <p>+233205619929</p>
+    </div>
+    <hr>
+    <div class="footer-base">
+      <p>&copy;<span id="currentyear"></span> Spencer Engmann | Chamber Project WDD 230 | Last Modified: <span
+          id="lastmodified"></span></p>
+    </div>
+  </footer>
 </body>
+
 </html>
