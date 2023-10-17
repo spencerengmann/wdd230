@@ -1,8 +1,43 @@
+:root{
+    --text-color:black;
+    --background-color: rgb(249, 245, 245);
+    --hover-background-color:#72AAC0;
+}
+
 body{
     font-family:  'Montserrat', sans-serif; 
     background-color: rgb(249, 245, 245);
+    color: var(--text-color);
     max-width: 1200px;
     margin: auto;
+    
+}
+.hero-container{
+    position: relative;
+    text-align: center;
+    
+}
+#events-button{
+    position: absolute;
+    bottom:50%;
+    right:50%;
+    background-color: #ffbb33;
+    font-size: 30px;
+    border:none;
+   
+    
+}
+#events-button:hover{
+    transition: background-color 0.3s;
+    background-color:#72AAC0 ;
+
+
+    
+}
+button{
+    color:var(--text-color);
+    background-color: var(--background-color);
+    cursor: pointer;
 }
 nav,footer,header{
     background-color:#ffbb33 ;
@@ -19,9 +54,18 @@ header img{
     border-radius: 10px;
     padding:5px;
 }
+#dark-mode{
+    position:absolute;
+    top:1rem;
+    right:2rem;
+}
 header h1{
     flex:2;
     text-align: center;
+}
+.home-section img{
+    border-radius: 10px;
+    
 }
 footer{
     margin:0 auto;

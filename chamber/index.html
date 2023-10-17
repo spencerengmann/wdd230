@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/hamburger-menu.js" defer></script>
+  <script src="scripts/darkmode.js" defer></script>
 
 
 
@@ -43,12 +44,14 @@
       <li><a href="join.html" target="_blank">Join</a></li>
     </ul>
   </nav>
-  
+  <div><button id='dark-mode'>DARK</button></div>
   <main id="home-main">
     <section id="hero" class="home-section">
       <h2>Hero</h2>
-      <img src="images/fire.jpg" alt="banner image" width="800" height="800">
-      <button>Visit our Events</button>
+      <div class="hero-container">
+      <img src="images/hero2.webp" alt="banner image" width="1200" height="500">
+      <button id="events-button">Visit our Events</button>
+      </div>
     </section>
     <section id="form" class="home-section">
 
@@ -78,22 +81,19 @@
     </section>
     <div id="spotlights" class="home-section">
       <section id="spotlight-1" class="spotlight-card">
-        <h3>spotlight-1</h3>
-        <img src="https://placehold.co/300x240" alt="spotlight 1 placeholder">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
-          quam rem deserunt placeat repellendus.</p>
+        <h3>Papaye</h3>
+        <img src="images/papaye.png" width="300" height="240" alt="spotlight 1 placeholder">
+        <p><b>Featured Dish: Jollof Rice</b>- A local favorite.<br><b>Community:</b> Supports local food drives and local lunch programs.</p>
       </section>
       <section id="spotlight-2" class="spotlight-card">
-        <h3>Spotlight 2</h3>
-        <img src="https://placehold.co/300x240" alt="spotlight 2 placeholder">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
-          quam rem deserunt placeat repellendus.</p>
+        <h3>Afrique De Code</h3>
+        <img src="images/coding.jpg" width="300" height="240" alt="spotlight 2 placeholder">
+        <p><b>Innovation:</b> Launched a coding platform that enables the public to learn how to code.This revolutionized the tech industry.<br><b>Local Employment:</b> Created <b>200</b> high-tech jobs</p>
       </section>
       <section id="spotlight-3" class="spotlight-card">
-        <h3>Spotlight 3</h3>
-        <img src="https://placehold.co/300x240" alt="spotlight 3 placeholder">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel totam quaerat qui facilis natus illum
-          quam rem deserunt placeat repellendus.</p>
+        <h3>Enelee Health & Wellness Center</h3>
+        <img src="images/welness.jpg" width="300" height="240" alt="spotlight 3 placeholder">
+        <p><b>Services:</b> Offers holistic services,from yoga to acupuncture. <br> <b>Community:</b> Hosts wellness workshops. </p>
       </section>
 
 
