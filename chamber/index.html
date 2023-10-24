@@ -19,7 +19,9 @@
   <link rel="stylesheet" href="styles/larger.css">
   <script src="scripts/getdates.js" defer></script>
   <script src="scripts/hamburger-menu.js" defer></script>
+  <script src="scripts/windchill.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
+  
 
 
 
@@ -30,7 +32,7 @@
   <header>
 
     <a href="https://spencerengmann.github.io/wdd230/chamber/index.html">
-      <img src="images/fire.jpg" width="107" height="100" alt="brand logo" />
+      <img src="images/fire.webp" width="107" height="100" alt="brand logo" />
     </a>
     <h1>Accra Chamber of Commerce</h1>
   </header>
@@ -49,7 +51,14 @@
     <section id="hero" class="home-section">
       <h2>Hero</h2>
       <div class="hero-container">
-      <img src="images/hero2.webp" alt="banner image" width="1200" height="500">
+      <picture>
+        <source srcset="images/wdd230-org-small.webp" media="(max-width:560px)">
+        <source srcset="images/wdd230-org-medium.webp" media="(max-width:1200px)">
+        <img src="images/wdd230-org-large.webp" alt="Hero image" >
+        <div class="overlay small">Small</div>
+        <div class="overlay medium">Medium</div>
+        <div class="overlay large">Large</div>
+      </picture>
       <button id="events-button">Visit our Events</button>
       </div>
     </section>
@@ -73,12 +82,16 @@
 
     </section>
    <section id="weather" class="home-section">
-    <h2>Information</h2>
-
-    <p>Accra,Ghana</p>
-
-    <p>Weather: 90&deg; Sunny</p>
-    </section>
+      <h2>Weather</h2>
+      <div>
+      <img src="images/weather-icon.webp" alt="weather">
+      <h2><span id="temperature">32</span>&deg;F</h2>
+      </div>
+      <h2 id="weatherdesc">Clear</h2>
+     <hr>
+      <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
+      <h3>Wind Chill: <span id="windchill">?</span>&deg;F</h3>
+     </section>
     <div id="spotlights" class="home-section">
       <section id="spotlight-1" class="spotlight-card">
         <h3>Papaye</h3>

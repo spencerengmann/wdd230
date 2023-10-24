@@ -42,6 +42,10 @@
     .footer-logo{
         text-align: right;
     }
+    #nav-menu.showing{
+
+        display: flex;
+    
+    }
     
 }
-    
