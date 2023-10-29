@@ -41,6 +41,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/site-visits.js" defer></script>
   </head>
   <body>
     <header>
@@ -75,17 +76,17 @@
 
         <picture>
 
-          <source srcset="images\accra-ghana-small.webp" media="(max-width:560px)">
+          <source srcset="images/accra-ghana-small.webp" media="(max-width:560px)">
 
           <source srcset="images/accra-ghana-medium.webp" media="(max-width:1200px)">
 
-          <img src="images/accra-ghana-large.jpg" alt="Accra Ghana Temple">
+          <img src="images/accra-ghana-large.webp" alt="Accra Ghana Temple">
 
         </picture>
 
         <div class="herolabel">
 
-          <h2>Accra Ghana Temple<h2>
+          <p> Accra Ghana Temple</p>
 
         </div>
 
@@ -115,6 +116,7 @@
       </section>
       <section class="card" id="information">
         <h3>Information</h3>
+        <p>Visit Count: <span id="visitcount"></span></p>
       </section>
       <iframe
         class="maps"
