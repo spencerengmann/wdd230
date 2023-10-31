@@ -54,6 +54,10 @@
         grid-gap:20px;
     }
     #discover-images{padding-top: 10px;}
+    #discover-sidebar{
+        border-right: 10px solid #ffbb33;
+        padding-right:5px;
+    }
     
     
 }
