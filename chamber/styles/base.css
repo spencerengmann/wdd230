@@ -232,7 +232,7 @@ padding-left: 10px;
     width: 100%;
     border-radius: 5px;
 }
-#discover-images img:hover {box-shadow: 0 0 50px #333;}
+
 .discover-content,#discover-message{
     border: 1px solid #ffbb33;
     border-radius:10px;
