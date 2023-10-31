@@ -225,6 +225,24 @@ button[type="submit"]:hover {
     text-align:center;
 }
 
+#discover-main{
+padding-left: 10px;
+}
+#discover-images img{
+    width: 100%;
+    border-radius: 5px;
+}
+#discover-images img:hover {box-shadow: 0 0 50px #333;}
+.discover-content,#discover-message{
+    border: 1px solid #ffbb33;
+    border-radius:10px;
+    margin-top: 10px;
+    padding-left:10px;
+    margin-bottom: 10px;
+}
+#discover-images h3{
+    text-align: center;
+}
 footer a{
     text-decoration: none;
     
@@ -266,3 +284,4 @@ footer a:hover{
       display: block; /* Display for large viewports */
     }
   }
+
