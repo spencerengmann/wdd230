@@ -1,0 +1,44 @@
+input{
+    display:block;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    width:30rem;
+}
+label{
+    display :block;
+    margin: 0.5em;
+    text-align: left;
+}
+
+#slidervalues{
+    display: flex;
+    width:31rem;
+    margin: 0 0 0 8px;
+}
+#slidervalues options{
+    flex:1;
+}
+button{font-size:1.5rem;
+    color: white;
+    padding: .5rem;
+    margin: 1rem 0;
+}
+input:valid{
+    box-shadow: 3px 3px 3px black;
+}
+input:invalid{
+    box-shadow: 3px 3px 3px red;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+    
+}
+.mysubmit{
+background-color: var(--heading-background-color);
+width:20rem;
+
+}
+    
+
+

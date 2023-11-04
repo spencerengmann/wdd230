@@ -1,4 +1,9 @@
-
+:root{
+    --text-color: black;
+    --hover-color: red;
+    --background-color: #F7FFF7;  
+    --heading-background-color:#A1C6D7;
+}
 
 body {
     margin:auto;
