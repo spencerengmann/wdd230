@@ -7,17 +7,14 @@ ratingInput.addEventListener("input", function() {
     updateRating(this.value);
 });
 
-const confirmPassword = document.getElementById("confirm");
-confirmPassword.addEventListener("blur", () => {
-    const password = document.getElementById("password");
-    const message = document.getElementById("message");
-
-    if (password.value !== confirmPassword.value) {
-        message.innerHTML = "Passwords do not match!";
-        password.value = "";
-        confirmPassword.value = "";
-        password.focus();
-    } else {
-        message.innerHTML = "";
+const confirm = document.getElementById("confirm")
+confirm.addEventListener('blur', ()=>{
+    const password= document.getElementById("password")
+    if (password.value != confirm.value){
+        document.getElementById("message").innerHTML="Passwords do not match!"
+        password.focus()    
     }
-});
+    else{
+        document.getElementById("message").innerHTML=""
+    }
+})
