@@ -1,0 +1,61 @@
+{
+    "members": [
+        {
+        "name": "Papaye",
+        "address": "123 Main Street, Rexburg, ID 83440",
+        "phone": "208-123-1223",
+        "imageURL": "https://beautifulghana.com/wp-content/uploads/2020/05/1445794335-54-papaye-fast-food-600x450.jpg",
+        "membershipLevel":"Gold",
+        "websiteURL": "https://www.papayegroup.com/"
+        },
+        {
+            "name": "Vodafone",
+            "address": "121 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-1221",
+            "imageURL": "https://assets.bizclikmedia.net/576/e5aeca18dce9f4d5b206e4cbde747326:82575990dc9778d472631574936c0391/screenshot-20-151.png",
+            "membershipLevel":"Silver",
+            "websiteURL": "https://vodafone.com.gh/home/"
+         },
+          {
+            "name": "Leyland Paints",
+            "address": "122 Main Street, Rexburg, ID 83440",
+            "phone": "208-123-1222",
+            "imageURL": "https://paintsghana.com/wp-content/uploads/2020/12/supply-master-building-material-leyland-emulsion-paint-14450434867334_500x.jpg",
+            "membershipLevel":"Gold",
+            "websiteURL": "https://paintsghana.com/product/leyland-emulsion-paint/"
+            },
+            {
+                "name": "MTN",
+                "address": "123 Main Street, Rexburg, ID 83440",
+                "phone": "208-123-1222",
+                "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/New-mtn-logo.jpg/640px-New-mtn-logo.jpg",
+                "membershipLevel":"Silver",
+                "websiteURL": "https://mtn.com.gh/"
+                },
+            {
+                    "name": "Airtel",
+                    "address": "128 Main Street, Rexburg, ID 83440",
+                    "phone": "208-123-1227",
+                    "imageURL": "https://cdn.ghanaweb.com/imagelib/pics/459/45902248.jpg",
+                    "membershipLevel":"Gold",
+                    "websiteURL": "https://www.at.com.gh/home"
+                    },
+             {
+                        "name": "Standard Chatered",
+                        "address": "124 Main Street, Rexburg, ID 83440",
+                        "phone": "208-123-1225",
+                        "imageURL": "https://images.africanfinancials.com/gh-scb-scz-logo.png",
+                        "membershipLevel":"Silver",
+                        "websiteURL": "https://www.sc.com/gh/"
+                        },
+                        {
+                            "name": "Ecobank",
+                            "address": "129 Main Street, Rexburg, ID 83440",
+                            "phone": "208-123-1229",
+                            "imageURL": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Ecobank_Logo_EN.png",
+                            "membershipLevel":"Gold",
+                            "websiteURL": "https://ecobank.com/gh/personal-banking/countries"
+                            }
+                
+    ]
+}
