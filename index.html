@@ -42,25 +42,31 @@
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/site-visits.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
   </head>
   <body>
     <header>
       <section>
-      <img
-        src="images/profilepic.webp"
-        height="180"
-        width="180"
-        alt="Picture of me"
-      />
-      <h1>Spencer Engmann</h1>
+        <img
+          src="images/profilepic.webp"
+          height="180"
+          width="180"
+          alt="Picture of me"
+        />
+        <h1>Spencer Engmann</h1>
       </section>
     </header>
     <nav>
-      <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
+      <button class="menu-hide">X</button
+      ><button class="menu-show showing">&equiv;</button>
       <ul id="nav-menu">
         <li><a class="active" href="#">Home</a></li>
         <li><a href="chamber/siteplan.html">Site Plan</a></li>
-        <li><a href="https://spencerengmann.github.io/wdd230/chamber/index.html">Chamber</a></li>
+        <li>
+          <a href="https://spencerengmann.github.io/wdd230/chamber/index.html"
+            >Chamber</a
+          >
+        </li>
         <li><a href="https://www.byui.edu/" target="_blank">BYU-IDAHO</a></li>
         <li>
           <a
@@ -73,23 +79,23 @@
     </nav>
     <main>
       <div class="hero">
-
         <picture>
+          <source
+            srcset="images/accra-ghana-small.webp"
+            media="(max-width:560px)"
+          />
 
-          <source srcset="images/accra-ghana-small.webp" media="(max-width:560px)">
+          <source
+            srcset="images/accra-ghana-medium.webp"
+            media="(max-width:1200px)"
+          />
 
-          <source srcset="images/accra-ghana-medium.webp" media="(max-width:1200px)">
-
-          <img src="images/accra-ghana-large.webp" alt="Accra Ghana Temple">
-
+          <img src="images/accra-ghana-large.webp" alt="Accra Ghana Temple" />
         </picture>
 
         <div class="herolabel">
-
-          <p> Accra Ghana Temple</p>
-
+          <p>Accra Ghana Temple</p>
         </div>
-
       </div>
       <h2>WDD 230:Web Frontend Develoment</h2>
       <section class="card" id="learning">
@@ -109,15 +115,37 @@
               Design Principles</a
             >
           </li>
-          <li>03.<a href="https://spencerengmann.github.io/wdd230/lesson03/chamber-site-plan.html">Chamber Site Plan</a></li>
-          <li>04.<a href="https://spencerengmann.github.io/wdd230/lesson05/bom.html">DOM Book of Mormon</a></li>
-          <li>05.<a href="https://spencerengmann.github.io/wdd230/form.html">Form Build</a></li>
-          <li>06.<a href="https://spencerengmann.github.io/wdd230/lesson09/prophets.html">Prophets</a></li>
-
+          <li>
+            03.<a
+              href="https://spencerengmann.github.io/wdd230/lesson03/chamber-site-plan.html"
+              >Chamber Site Plan</a
+            >
+          </li>
+          <li>
+            04.<a
+              href="https://spencerengmann.github.io/wdd230/lesson05/bom.html"
+              >DOM Book of Mormon</a
+            >
+          </li>
+          <li>
+            05.<a href="https://spencerengmann.github.io/wdd230/form.html"
+              >Form Build</a
+            >
+          </li>
+          <li>
+            06.<a
+              href="https://spencerengmann.github.io/wdd230/lesson09/prophets.html"
+              >Prophets</a
+            >
+          </li>
         </ul>
       </section>
       <section class="card" id="information">
         <h3>Information</h3>
+        <p>Accra, Ghana</p>
+        <p><img id="weather-icon" src="" alt="weather icon" /></p>
+        <p id="weather-desc"></p>
+        <p id="weather-temp"></p>
         <p>Visit Count: <span id="visitcount"></span></p>
       </section>
       <iframe

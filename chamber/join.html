@@ -7,7 +7,7 @@
       name="description"
       content="This is going to be the home page for the Accra Chamber of Commerce."
     />
-    <title>Accra Chamber of Commerce</title>
+    <title>Accra Chamber of Commerce Join Page</title>
     <meta name="author" content="Spencer Engmann" />
     <meta
       property="og:url"
@@ -35,12 +35,18 @@
     <script src="scripts/hamburger-menu.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
     <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/join.js" defer></script>
   </head>
 
   <body>
     <header>
       <a href="https://spencerengmann.github.io/wdd230/chamber/index.html">
-        <img src="images/fire2.webp" width="107" height="100" alt="brand logo" />
+        <img
+          src="images/fire2.webp"
+          width="107"
+          height="100"
+          alt="brand logo"
+        />
       </a>
       <h1>Accra Chamber of Commerce</h1>
     </header>
@@ -57,63 +63,130 @@
     </nav>
     <div><button id="dark-mode">DARK</button></div>
     <main id="join-main">
-        
-            <div>
-                <form action="thankyou.html" method="get">
-                    <label class="myinput">First Name*<input type="text" id="fname" name="fname" required></label>
-                    <label class="myinput">Last Name*<input type="text"id="lnane" name="lname" required></label>
-                    <label class="myinput">Title<input id="title" type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
-                    <label class="myinput">Email*<input type="email"id="email" name="email" placeholder="example@example.com" required></label>
-                    <label class="myinput">Cell Phone*<input type="tel"id="phone" name="phone" required></label>
-                    <label class="myinput">Business Name*<input type="text" id="busname" name="bizname" required></label>
-                    <h3>Membership Level</h3>
-                    <label class="myradio"><input type="radio" name="level" value="nonprofit">Non-Profit</label>
-                    <label class="myradio"><input type="radio" name="level" value="bronze">Bronze</label>
-                    <label class="myradio"><input type="radio" name="level" value="silver">Silver</label>
-                    <label class="myradio"><input type="radio" name="level" value="gold">Gold</label>
-                    <label class="myinput">Business Description<textarea name="description" cols="40"
-                            rows="5"></textarea></label>
-                    <label><input id="currentdate" type="hidden" id="currentdate" name="currentdate" value=""></label>
-                    <input class="mysubmit" type="submit" value="Join the Chamber!">
-                </form>
-            </div>
-            <div class="member-benefits">
-                <h2>Membership Levels Benefits</h2>
-                <h3>NP Membership</h3>
-                <ul>
-                    <li>No Fee: As a non-profit, no fee is associated with this membership level.</li>
-                    <li>Basic Access to Resources: Access to basic resources and information offered by the organization.</li>
+      <div>
+        <form action="thankyou.html" method="get">
+          <label class="myinput"
+            >First Name*<input type="text" id="fname" name="fname" required
+          /></label>
+          <label class="myinput"
+            >Last Name*<input type="text" id="lname" name="lname" required
+          /></label>
+          <label class="myinput"
+            >Title<input
+              id="title"
+              type="text"
+              name="title"
+              pattern="[A-Za-z -]{7,}"
+          /></label>
+          <label class="myinput"
+            >Email*<input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@example.com"
+              required
+          /></label>
+          <label class="myinput"
+            >Cell Phone*<input type="tel" id="phone" name="phone" required
+          /></label>
+          <label class="myinput"
+            >Business Name*<input
+              type="text"
+              id="busname"
+              name="bizname"
+              required
+          /></label>
+          <h3>Membership Level</h3>
+          <label class="myradio"
+            ><input
+              type="radio"
+              name="level"
+              value="nonprofit"
+            />Non-Profit</label
+          >
+          <label class="myradio"
+            ><input type="radio" name="level" value="bronze" />Bronze</label
+          >
+          <label class="myradio"
+            ><input type="radio" name="level" value="silver" />Silver</label
+          >
+          <label class="myradio"
+            ><input type="radio" name="level" value="gold" />Gold</label
+          >
+          <label class="myinput"
+            >Business Description<textarea
+              name="description"
+              cols="40"
+              rows="5"
+            ></textarea>
+          </label>
+          <input id="timestamp" type="hidden" name="timestamp" value="" />
+          <input class="mysubmit" type="submit" value="Join the Chamber!" />
+        </form>
+      </div>
+      <div class="member-benefits">
+        <h2>Membership Levels Benefits</h2>
+        <h3>NP Membership</h3>
+        <ul>
+          <li>
+            No Fee: As a non-profit, no fee is associated with this membership
+            level.
+          </li>
+          <li>
+            Basic Access to Resources: Access to basic resources and information
+            offered by the organization.
+          </li>
+        </ul>
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>Cost: $100: Membership at the Bronze level costs $100.</li>
+          <li>
+            Event Discounts: Discounts for attending organization-sponsored
+            events, workshops, or seminars.
+          </li>
+          <li>
+            Basic Advertising Opportunities: Basic advertising or promotional
+            opportunities in the organization's materials.
+          </li>
+        </ul>
 
-                </ul>
-                <h3>Bronze Membership</h3>
-                <ul>
-                    <li>Cost: $100: Membership at the Bronze level costs $100.</li>
-                    <li>Event Discounts: Discounts for attending organization-sponsored events, workshops, or seminars.</li>
-                    <li>Basic Advertising Opportunities: Basic advertising or promotional opportunities in the organization's materials.</li>
-                </ul>
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>Cost: $250: Membership at the Silver level costs $250.</li>
+          <li>
+            Enhanced Event Discounts: Higher discounts for attending events
+            compared to the Bronze level.
+          </li>
+          <li>
+            Enhanced Advertising Opportunities: More prominent advertising space
+            in the organization's materials.
+          </li>
+          <li>
+            Exclusive Training Sessions: Access to exclusive training or
+            educational sessions.
+          </li>
+        </ul>
 
-                <h3>Silver Membership</h3>
-                <ul>
-                    <li>Cost: $250: Membership at the Silver level costs $250.</li>
-                    <li>Enhanced Event Discounts: Higher discounts for attending events compared to the Bronze level.</li>
-                    <li>Enhanced Advertising Opportunities: More prominent advertising space in the organization's materials.</li>
-                    <li>Exclusive Training Sessions: Access to exclusive training or educational sessions.
-                    </li>
-                </ul>
-
-                <h3>Gold Membership</h3>
-                <ul>
-                    <li>Cost: $500: Membership at the Gold level costs $500.</li>
-                    <li>Premier Event Discounts: The highest discounts for attending events.</li>
-                    <li>VIP Access to Special Events: Access to exclusive VIP events or gatherings.</li>
-                    <li>Premier Advertising Opportunities: Priority placement for advertising in the organization's materials.
-                    </li>
-                    <li>Exclusive Training Sessions: Advanced and specialized training sessions tailored for Gold members.
-                    </li>
-                    
-                </ul>
-            </div>
-           
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>Cost: $500: Membership at the Gold level costs $500.</li>
+          <li>
+            Premier Event Discounts: The highest discounts for attending events.
+          </li>
+          <li>
+            VIP Access to Special Events: Access to exclusive VIP events or
+            gatherings.
+          </li>
+          <li>
+            Premier Advertising Opportunities: Priority placement for
+            advertising in the organization's materials.
+          </li>
+          <li>
+            Exclusive Training Sessions: Advanced and specialized training
+            sessions tailored for Gold members.
+          </li>
+        </ul>
+      </div>
     </main>
 
     <footer>
