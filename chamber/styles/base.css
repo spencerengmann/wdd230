@@ -61,6 +61,7 @@ nav,
 footer,
 header {
     background-color: #ffbb33;
+    color: black;
 }
 
 header {
@@ -313,6 +314,10 @@ footer a {
 footer a:hover {
     background-color: #72AAC0;
 
+}
+
+footer {
+    color: black;
 }
 
 .directory-main {
