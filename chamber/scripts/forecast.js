@@ -1,8 +1,8 @@
 
-const LAT = 5.5912029;
-const LON = -0.2623024;
-const APIKEY = "dd1c15f9845223a7a99783c584c93af6";
-const weatherURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${APIKEY}&units=imperial`;
+const LATI = 5.5912029;
+const LONG = -0.2623024;
+const APIKEYS = "dd1c15f9845223a7a99783c584c93af6";
+const weatherURLS = `https://api.openweathermap.org/data/2.5/forecast?lat=${LATI}&lon=${LONG}&appid=${APIKEYS}&units=imperial`;
 
 const ONE_DAY = 24 * 60 * 60 * 1000
 
@@ -43,7 +43,7 @@ function showForecast(forecasts){
 
 async function fetchForecast() {
     try {
-      const response = await fetch(weatherURL);
+      const response = await fetch(weatherURLS);
       if (response.ok) {
         const data = await response.json();        
         showForecast(data.list);
