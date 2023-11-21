@@ -63,66 +63,68 @@
     </nav>
     <div><button id="dark-mode">DARK</button></div>
     <main id="join-main">
-      <div>
-        <form action="thankyou.html" method="get">
-          <label class="myinput"
-            >First Name*<input type="text" id="fname" name="fname" required
-          /></label>
-          <label class="myinput"
-            >Last Name*<input type="text" id="lname" name="lname" required
-          /></label>
-          <label class="myinput"
-            >Title<input
-              id="title"
-              type="text"
-              name="title"
-              pattern="[A-Za-z -]{7,}"
-          /></label>
-          <label class="myinput"
-            >Email*<input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="example@example.com"
-              required
-          /></label>
-          <label class="myinput"
-            >Cell Phone*<input type="tel" id="phone" name="phone" required
-          /></label>
-          <label class="myinput"
-            >Business Name*<input
-              type="text"
-              id="busname"
-              name="bizname"
-              required
-          /></label>
-          <h3>Membership Level</h3>
-          <label class="myradio"
-            ><input
-              type="radio"
-              name="level"
-              value="nonprofit"
-            />Non-Profit</label
-          >
-          <label class="myradio"
-            ><input type="radio" name="level" value="bronze" />Bronze</label
-          >
-          <label class="myradio"
-            ><input type="radio" name="level" value="silver" />Silver</label
-          >
-          <label class="myradio"
-            ><input type="radio" name="level" value="gold" />Gold</label
-          >
-          <label class="myinput"
-            >Business Description<textarea
-              name="description"
-              cols="40"
-              rows="5"
-            ></textarea>
-          </label>
-          <input id="timestamp" type="hidden" name="timestamp" value="" />
-          <input class="mysubmit" type="submit" value="Join the Chamber!" />
-        </form>
+      <div id="discover-sidebar">
+        <div>
+          <form action="thankyou.html" method="get">
+            <label class="myinput"
+              >First Name*<input type="text" id="fname" name="fname" required
+            /></label>
+            <label class="myinput"
+              >Last Name*<input type="text" id="lname" name="lname" required
+            /></label>
+            <label class="myinput"
+              >Title<input
+                id="title"
+                type="text"
+                name="title"
+                pattern="[A-Za-z -]{7,}"
+            /></label>
+            <label class="myinput"
+              >Email*<input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@example.com"
+                required
+            /></label>
+            <label class="myinput"
+              >Cell Phone*<input type="tel" id="phone" name="phone" required
+            /></label>
+            <label class="myinput"
+              >Business Name*<input
+                type="text"
+                id="busname"
+                name="bizname"
+                required
+            /></label>
+            <h3>Membership Level</h3>
+            <label class="myradio"
+              ><input
+                type="radio"
+                name="level"
+                value="nonprofit"
+              />Non-Profit</label
+            >
+            <label class="myradio"
+              ><input type="radio" name="level" value="bronze" />Bronze</label
+            >
+            <label class="myradio"
+              ><input type="radio" name="level" value="silver" />Silver</label
+            >
+            <label class="myradio"
+              ><input type="radio" name="level" value="gold" />Gold</label
+            >
+            <label class="myinput"
+              >Business Description<textarea
+                name="description"
+                cols="40"
+                rows="5"
+              ></textarea>
+            </label>
+            <input id="timestamp" type="hidden" name="timestamp" value="" />
+            <input class="mysubmit" type="submit" value="Join the Chamber!" />
+          </form>
+        </div>
       </div>
       <div class="member-benefits">
         <h2>Membership Levels Benefits</h2>
