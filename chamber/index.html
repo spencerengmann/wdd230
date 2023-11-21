@@ -1,136 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is going to be the home page for the Accra Chamber of Commerce."
+    />
+    <title>Accra Chamber of Commerce</title>
+    <meta name="author" content="Spencer Engmann" />
+    <meta
+      property="og:url"
+      content="https://spencerengmann.github.io/wdd230/chamber/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Accra Chamber Commerce" />
+    <meta
+      property="og:description"
+      content="This is going to be the home page for the Accra Chamber of Commerce."
+    />
+    <meta
+      property="og:image"
+      content="https://spencerengmann.github.io/wdd230/images/profile.jpg"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <script src="scripts/darkmode.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/greet.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="This is going to be the home page for the Accra Chamber of Commerce." />
-  <title>Accra Chamber of Commerce</title>
-  <meta name="author" content="Spencer Engmann" />
-  <meta property="og:url" content="https://spencerengmann.github.io/wdd230/chamber/index.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Accra Chamber Commerce" />
-  <meta property="og:description" content="This is going to be the home page for the Accra Chamber of Commerce." />
-  <meta property="og:image" content="https://spencerengmann.github.io/wdd230/images/profile.jpg" />
-  <link rel="icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/medium.css">
-  <link rel="stylesheet" href="styles/larger.css">
-  <script src="scripts/getdates.js" defer></script>
-  <script src="scripts/hamburger-menu.js" defer></script>
-  <script src="scripts/windchill.js" defer></script>
-  <script src="scripts/darkmode.js" defer></script>
-  
+  <body>
+    <header>
+      <a href="https://spencerengmann.github.io/wdd230/chamber/index.html">
+        <img
+          src="images/fire2.webp"
+          width="107"
+          height="100"
+          alt="brand logo"
+        />
+      </a>
+      <h1>Accra Chamber of Commerce</h1>
+    </header>
+    <nav>
+      <button class="menu-hide">X</button
+      ><button class="menu-show showing">&equiv;</button>
 
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html" target="_blank">Discover</a></li>
+        <li><a href="directory.html" target="_blank">Directory</a></li>
+        <li><a href="join.html" target="_blank">Join</a></li>
+      </ul>
+    </nav>
+    <div><button id="dark-mode">DARK</button></div>
+    <main id="home-main">
+      <p id="meetgreet">
+        Join us for a meet and greet Wednesday night at 7:00 P.M.
+        <button id="close-greet">❌</button>
+      </p>
+      <section id="hero" class="home-section">
+        <h2>Hero</h2>
+        <div class="hero-container">
+          <picture>
+            <source
+              srcset="images/wdd230-org-small.webp"
+              media="(max-width:560px)"
+            />
+            <source
+              srcset="images/wdd230-org-medium.webp"
+              media="(max-width:1200px)"
+            />
+            <img src="images/wdd230-org-large.webp" alt="Hero image" />
+          </picture>
+          <div class="overlay small">Small</div>
+          <div class="overlay medium">Medium</div>
+          <div class="overlay large">Large</div>
+          <button id="events-button">Visit our Events</button>
+        </div>
+      </section>
+      <section id="form" class="home-section">
+        <form>
+          <h3>Sign up for our Newsletter</h3>
 
+          <label>Full Name</label>
 
+          <input type="text" name="username" required placeholder="John Doe" />
 
-</head>
+          <label>email address</label>
 
-<body>
-  <header>
+          <input
+            type="email"
+            name="useremail"
+            id="useremail"
+            required
+            placeholder="johndoe@gmail.com"
+          />
 
-    <a href="https://spencerengmann.github.io/wdd230/chamber/index.html">
-      <img src="images/fire2.webp" width="107" height="100" alt="brand logo" />
-    </a>
-    <h1>Accra Chamber of Commerce</h1>
-  </header>
-  <nav>
-    <button class="menu-hide">X</button><button class="menu-show showing">&equiv;</button>
-   
-    <ul id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="discover.html" target="_blank">Discover</a></li>
-      <li><a href="directory.html" target="_blank">Directory</a></li>
-      <li><a href="join.html" target="_blank">Join</a></li>
-    </ul>
-  </nav>
-  <div><button id='dark-mode'>DARK</button></div>
-  <main id="home-main">
-    <section id="hero" class="home-section">
-      <h2>Hero</h2>
-      <div class="hero-container">
-      <picture>
-        <source srcset="images/wdd230-org-small.webp" media="(max-width:560px)">
-        <source srcset="images/wdd230-org-medium.webp" media="(max-width:1200px)">
-        <img src="images/wdd230-org-large.webp" alt="Hero image" >  
-      </picture>
-      <div class="overlay small">Small</div>
-      <div class="overlay medium">Medium</div>
-      <div class="overlay large">Large</div>
-      <button id="events-button">Visit our Events</button>
+          <button type="submit">Sign Up</button>
+        </form>
+      </section>
+      <section id="weather" class="home-section">
+        <h2>Weather Forecast</h2>
+        <p>Accra, Ghana</p>
+        <p><img id="weather-icon" src="" alt="weather icon" /></p>
+        <p id="weather-desc"></p>
+        <p id="weather-temp"></p>
+
+        <h2>Weather forecast for the next 3 days</h2>
+      </section>
+      <div id="spotlights" class="home-section">
+        <section id="spotlight-1" class="spotlight-card">
+          <h3>Papaye</h3>
+          <img
+            src="images/papaye.png"
+            width="300"
+            height="240"
+            alt="spotlight 1 placeholder"
+          />
+          <p>
+            <b>Featured Dish: Jollof Rice</b>- A local favorite.<br /><b
+              >Community:</b
+            >
+            Supports local food drives and local lunch programs.
+          </p>
+        </section>
+        <section id="spotlight-2" class="spotlight-card">
+          <h3>Afrique De Code</h3>
+          <img
+            src="images/coding.jpg"
+            width="300"
+            height="240"
+            alt="spotlight 2 placeholder"
+          />
+          <p>
+            <b>Innovation:</b> Launched a coding platform that enables the
+            public to learn how to code.This revolutionized the tech
+            industry.<br /><b>Local Employment:</b> Created <b>200</b> high-tech
+            jobs
+          </p>
+        </section>
+        <section id="spotlight-3" class="spotlight-card">
+          <h3>Enelee Health & Wellness Center</h3>
+          <img
+            src="images/welness.jpg"
+            width="300"
+            height="240"
+            alt="spotlight 3 placeholder"
+          />
+          <p>
+            <b>Services:</b> Offers holistic services,from yoga to acupuncture.
+            <br />
+            <b>Community:</b> Hosts wellness workshops.
+          </p>
+        </section>
       </div>
-    </section>
-    <section id="form" class="home-section">
+    </main>
 
-      <form>
-
-        <h3> Sign up for our Newsletter</h3>
-
-        <label >Full Name</label>
-
-        <input type="text" name="username" required placeholder="John Doe">
-
-        <label >email address</label>
-
-        <input type="email" name="useremail" id="useremail" required placeholder="johndoe@gmail.com">
-
-        <button type="submit">Sign Up</button>
-
-      </form>
-
-    </section>
-   <section id="weather" class="home-section">
-      <h2>Weather</h2>
-      <div>
-      <img src="images/weather-icon.webp" alt="weather">
-      <h2><span id="temperature">32</span>&deg;F</h2>
+    <footer>
+      <hr />
+      <div class="footer-logo">
+        <p>
+          <img src="images/fire2.webp" alt="Logo" height="160" width="160" />
+        </p>
       </div>
-      <h2 id="weatherdesc">Clear</h2>
-     <hr>
-      <h3>Wind Speed: <span id="windspeed">10</span> mph</h3>
-      <h3>Wind Chill: <span id="windchill">?</span>&deg;F</h3>
-     </section>
-    <div id="spotlights" class="home-section">
-      <section id="spotlight-1" class="spotlight-card">
-        <h3>Papaye</h3>
-        <img src="images/papaye.png" width="300" height="240" alt="spotlight 1 placeholder">
-        <p><b>Featured Dish: Jollof Rice</b>- A local favorite.<br><b>Community:</b> Supports local food drives and local lunch programs.</p>
-      </section>
-      <section id="spotlight-2" class="spotlight-card">
-        <h3>Afrique De Code</h3>
-        <img src="images/coding.jpg" width="300" height="240" alt="spotlight 2 placeholder">
-        <p><b>Innovation:</b> Launched a coding platform that enables the public to learn how to code.This revolutionized the tech industry.<br><b>Local Employment:</b> Created <b>200</b> high-tech jobs</p>
-      </section>
-      <section id="spotlight-3" class="spotlight-card">
-        <h3>Enelee Health & Wellness Center</h3>
-        <img src="images/welness.jpg" width="300" height="240" alt="spotlight 3 placeholder">
-        <p><b>Services:</b> Offers holistic services,from yoga to acupuncture. <br> <b>Community:</b> Hosts wellness workshops. </p>
-      </section>
-
-
-    </div>
-    
-  </main>
-
-  <footer>
-    <hr>
-    <div class="footer-logo">
-      <p><img src="images/fire2.webp" alt="Logo" height="160" width="160"></p>
-    </div>
-    <div class="footer-contact">
-      <p>Accra Chamber of Commerce</p>
-      <p>Independednce Avenue 210, Accra Ghana</p>
-      <p><a href="#">info@accrachamber.org</a></p>
-      <p>+233205619929</p>
-    </div>
-    <hr>
-    <div class="footer-base">
-      <p>&copy;<span id="currentyear"></span> Spencer Engmann | Chamber Project WDD 230 | Last Modified: <span
-          id="lastmodified"></span></p>
-    </div>
-  </footer>
-</body>
-
+      <div class="footer-contact">
+        <p>Accra Chamber of Commerce</p>
+        <p>Independednce Avenue 210, Accra Ghana</p>
+        <p><a href="#">info@accrachamber.org</a></p>
+        <p>+233205619929</p>
+      </div>
+      <hr />
+      <div class="footer-base">
+        <p>
+          &copy;<span id="currentyear"></span> Spencer Engmann | Chamber Project
+          WDD 230 | Last Modified: <span id="lastmodified"></span>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
