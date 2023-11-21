@@ -35,7 +35,7 @@ function showForecast(forecasts){
     weatherElt = document.querySelector("#weather")
     for (let i=0; i < 3; i++){
         let newsection = document.createElement("section");
-        newsection.innerHTML = `<h2>${dates[i]}</h2><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p>`
+        newsection.innerHTML = `<h3>${dates[i]}</h3><p>High: ${highTemps[i].main.temp.toFixed(0)}&deg;</p><p>Low: ${lowTemps[i].main.temp.toFixed(0)}&deg;</p>`
         weatherElt.append(newsection)
     }    
   
