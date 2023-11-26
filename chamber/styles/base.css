@@ -248,6 +248,11 @@ button[type="submit"]:hover {
 
 }
 
+#weather p {
+    padding: 4px;
+    margin: 0px;
+}
+
 .mysubmit {
     background-color: #72AAC0;
     color: black;
@@ -258,8 +263,31 @@ button[type="submit"]:hover {
     transition: background-color 0.3s;
 }
 
+#spotlights {
+    padding-top: 5px;
+}
+
+#spotlight-1 {
+    margin: 5px;
+}
+
+#spotlight-2 {
+    margin: 5px;
+}
+
+#spotlight-3 {
+    margin: 5px;
+}
+
+
 .mysubmit:hover {
     background-color: #0056b3;
+}
+
+.spotlight-card {
+    border-radius: 5px;
+    border: 1px solid #ffbb33;
+    padding: 10px;
 }
 
 label.myinput input:required {
@@ -274,9 +302,7 @@ label.myinput input:required {
     text-align: center;
 }
 
-#home-main section p {
-    padding: 1rem;
-}
+
 
 #home-main section h2 {
     text-align: center;

@@ -1,12 +1,12 @@
-:root{
+:root {
     --text-color: black;
     --hover-color: red;
-    --background-color: #F7FFF7;  
-    --heading-background-color:#A1C6D7;
+    --background-color: #F7FFF7;
+    --heading-background-color: #A1C6D7;
 }
 
 body {
-    margin:auto;
+    margin: auto;
     font-family: 'Montserrat', sans-serif;
     background-color: #F7FFF7;
     text-align: center;
@@ -20,7 +20,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
     max-width: 1100px;
-    
+
     justify-content: center;
 }
 
@@ -41,16 +41,18 @@ h3 {
     font-weight: bold;
 }
 
-header {display: flex;
+header {
+    display: flex;
     background-color: #A1C6D7;
     padding-top: 30px;
-    
+
     border-radius: 5px;
     justify-content: center;
     align-items: center;
 }
- img{
-    
+
+img {
+
     border-radius: 10px;
 }
 
@@ -63,10 +65,13 @@ nav {
 
 
 }
+
 ul li a:hover {
-    color: red; /* Change the text color to red on hover */
-    text-decoration: underline; /* Add an underline on hover */
-  }
+    color: red;
+    /* Change the text color to red on hover */
+    text-decoration: underline;
+    /* Add an underline on hover */
+}
 
 
 nav a {
@@ -74,14 +79,17 @@ nav a {
     color: #F7FFF7;
     line-height: 2;
     font-size: 22px;
-    padding: 20px;;
+    padding: 20px;
+    ;
 }
-nav ul  {
-    display:flex;
+
+nav ul {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
+
 nav ul li {
     align-items: center;
 }
@@ -100,9 +108,9 @@ footer {
 
 }
 
-.active{
+.active {
     background-color: rgb(139, 74, 0);
-    
+
 }
 
 ul li,
@@ -113,6 +121,7 @@ ul li a {
 }
 
 .card {
+
     border-radius: 10px;
     border: 1px solid grey;
     grid-column: inherit;
@@ -121,11 +130,14 @@ ul li a {
 .modified {
     color: black;
 }
-iframe{
-    width:90%;
+
+iframe {
+    width: 90%;
     border-radius: 10px;
 }
-.menu-hide, .menu-show{
+
+.menu-hide,
+.menu-show {
     display: none;
     background-color: #A1C6D7;
     border: black;
@@ -133,30 +145,35 @@ iframe{
     border-radius: 5px;
 }
 
-.menu-hide.showing, .menu-show.showing{
+.menu-hide.showing,
+.menu-show.showing {
     display: block;
 }
 
-#nav-menu{
+#nav-menu {
     display: none;
 }
 
-#nav-menu.showing{
+#nav-menu.showing {
     display: flex;
 }
 
-.hero{
+.hero {
     grid-column: 1/3;
-    position:relative;
+    position: relative;
 }
-.hero p{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+
+.hero p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 40px;
     font-style: italic;
 
 
 }
-.hero img{width:100%;}
+
+.hero img {
+    width: 100%;
+}
