@@ -34,7 +34,7 @@ const displayMembers = (businesss) => {
     
     let card = document.createElement("section");
     card.innerHTML = `
-    <img src="${business.imageURL}">
+    <img src="${business.imageURL}" alt="picture of ${business.name}">
     <p>${business.name}</p>
     <p>${business.address}</p>
     <p>${business.phone}</p>
