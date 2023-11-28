@@ -142,6 +142,10 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+.active {
+    background-color: #72AAC0;
+}
+
 .menu-hide,
 .menu-show {
 
