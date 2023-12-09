@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is the home page for bountiful smoothies. Learn about the various smoothies we have to offer"
+    />
+    <title>Bountiful Smoothie Home Page</title>
+    <meta name="author" content="Spencer Engmann" />
+    <meta
+      property="og:url"
+      content="https://spencerengmann.github.io/wdd230/bountiful/index.html"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Bountiful Smoothies" />
+    <meta
+      property="og:description"
+      content="This is the home page for bountiful smoothies. Learn about the various smoothies we have to offer"
+    />
+    <meta
+      property="og:image"
+      content="https://spencerengmann.github.io/wdd230/bountiful/images/logo.png"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/hamburger-menu.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.png" width="107" height="100" alt="brand logo" />
+
+      <h1>Bountiful Smoothies</h1>
+      <nav>
+        <button class="menu-hide">X</button
+        ><button class="menu-show showing">&equiv;</button>
+        <ul id="nav-menu">
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="order.html">Order Drink</a></li>
+          <li><a href="About Us">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="index-main">
+      <section id="hero">
+        <div class="hero-container">
+          <picture>
+            <source srcset="images/hero-small.webp" media="(max-width:560px)" />
+            <source
+              srcset="images/hero-medium.webp"
+              media="(max-width:1200px)"
+            />
+            <img src="images/hero-large.webp" alt="Hero image" />
+          </picture>
+          <a href="order.html"
+            ><button id="order-button">Order your drink now!</button></a
+          >
+        </div>
+      </section>
+      <section id="summary" class="index-section">
+        <img
+          src="images/santa-monica.webp"
+          alt="image of Santa Monica"
+          id="summary-img"
+          width="400"
+          height="400"
+        />
+        <h2>Santa Monica</h2>
+        <p>
+          Santa Monica, situated along the southern California coast, is a
+          vibrant coastal destination renowned for its iconic Santa Monica Pier,
+          sandy beach, and lively Third Street Promenade. This beach community
+          captures the essence of Southern Californian surf culture, offering a
+          blend of outdoor activities, cultural attractions, and a relaxed
+          coastal lifestyle. Palisades Park provides a scenic retreat with
+          panoramic views of the Pacific Ocean, adding to the area's allure.
+          Santa Monica is a cherished coastal gem that seamlessly combines
+          natural beauty with a bustling urban vibe.
+        </p>
+      </section>
+      <div id="smoothies">
+        <h2>Our best Smoothies!</h2>
+        <div class="smoothies">
+          <section id="smoothie-1" class="smoothie-section">
+            <h2>Banana Orange Bliss Smoothie</h2>
+            <img
+              src="images/image1.jpg"
+              alt="smoothie image"
+              width="300"
+              height="240"
+            />
+            <p>
+              Indulge in a burst of sunshine with our Banana Orange Bliss
+              Smoothie! This vibrant blend combines the creamy goodness of ripe
+              bananas with the zesty kick of fresh oranges, creating a tropical
+              symphony of flavors that will transport your taste buds to
+              paradise. Sip, smile, and savor the perfect harmony of sweet and
+              citrus in every delightful sip!
+            </p>
+          </section>
+          <section id="smoothie-2" class="smoothie-section">
+            <h2>Berry Power Smoothie</h2>
+            <img
+              src="images/image2.jpg"
+              alt="smoothie image"
+              width="300"
+              height="240"
+            />
+            <p>
+              Energize your day with our Berry Power Potion! Packed with a
+              medley of succulent berries, this vibrant elixir is a burst of
+              antioxidant goodness. Unleash the power of nature's jewels and
+              fuel your vitality with each sip. Feel the zing, embrace the
+              flavor, and let the berry-powered magic revitalize your senses!
+            </p>
+          </section>
+          <section id="smoothie-3" class="smoothie-section">
+            <h2>Chocolate Peanut Butter Smoothie</h2>
+            <img
+              src="images/Chocolate-Peanut-Butter-Banana-Smoothie-5.webp"
+              alt="smoothie image"
+              width="300"
+              height="240"
+            />
+            <p>
+              Indulge in a symphony of decadence with our Chocolate Peanut
+              Butter Bliss Smoothie! This irresistible blend combines rich,
+              velvety chocolate with the creamy allure of peanut butter,
+              creating a luscious potion that's pure liquid delight. Sip into
+              satisfaction and let the heavenly fusion of flavors dance on your
+              palate. It's a guilt-free pleasure that turns every moment into a
+              chocolatey celebration!
+            </p>
+          </section>
+        </div>
+      </div>
+      <section id="weather" class="index-section">
+        <section id="current-weather">
+          <p>Today</p>
+          <img src="" alt="Weather Icon" id="weather-icon" />
+          <p id="w-description">Description</p>
+          <p>Temperature: <span id="temp-span"></span></p>
+          <p>Humidity: <span id="humid-span"></span></p>
+        </section>
+        <h2>Forecast for the next 3 Days @9:00 AM</h2>
+        <section id="forecastSection"></section>
+      </section>
+      <section id="Information">
+        <h3>Orders Made:</h3>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <p>
+          <img src="images/logo.png" alt="Logo" width="107" height="100" />
+        </p>
+      </div>
+      <div class="footer-contact-details">
+        <p><b>Bountiful Smoothies</b></p>
+        <p>2428 24th St</p>
+        <p>Santa Monica,CA 90404</p>
+        <p>+2084031179</p>
+      </div>
+
+      <div class="footer-base">
+        <p>
+          &copy;<span id="currentyear"></span> Bountiful Smoothies | Last
+          Modified: <span id="lastmodified"></span>
+        </p>
+        <div class="resources">
+          <p>Resources:</p>
+          <a href="https://www.fruityvice.com/#1">Fruity Vice</a> |
+          <a href="https://openweathermap.org/">Open Weather</a>
+        </div>
+      </div>
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/">
+          <img
+            src="images/facebook.png"
+            alt="Facebook"
+            width="50"
+            height="50"
+          />
+        </a>
+
+        <a href="https://twitter.com/">
+          <img src="images/twitter.png" alt="Twitter" width="50" height="50" />
+        </a>
+
+        <a href="https://www.instagram.com/">
+          <img
+            src="images/instagram.png"
+            alt="Instagram"
+            width="50"
+            height="50"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

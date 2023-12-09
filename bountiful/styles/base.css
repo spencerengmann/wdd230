@@ -1,0 +1,373 @@
+:root {
+    --text-color: black;
+    --background-color: #ffffff;
+    --accent-color1: #dfde9f;
+    --accent-color2: #8AD167;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    max-width: 1200px;
+    padding: 10px;
+    margin: auto;
+
+
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+nav,
+footer,
+header {
+    color: black;
+    background-color: var(--accent-color1);
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+
+
+}
+
+header img {
+    cursor: pointer;
+    margin-left: 4px;
+    border-radius: 45%;
+}
+
+header h1 {
+
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+#weather h2 {
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+nav ul {
+    list-style: none;
+
+}
+
+
+nav ul li a {
+    display: block;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 10px;
+
+}
+
+
+nav ul li a:hover {
+    background-color: var(--accent-color2);
+    border-radius: 10px;
+}
+
+.menu-hide,
+.menu-show {
+
+    display: none;
+
+    background-color: var(--accent-color2);
+
+    border: black;
+
+    margin: .5rem 0 0 .5rem;
+
+    border-radius: 5px;
+
+}
+
+
+
+.menu-hide.showing,
+.menu-show.showing {
+
+    display: block;
+    text-align: center;
+
+}
+
+
+
+#nav-menu {
+
+    display: none;
+
+
+}
+
+
+
+#nav-menu.showing {
+
+    display: block;
+
+
+}
+
+.active {
+    background-color: var(--accent-color2);
+    border-radius: 10px;
+}
+
+#hero img {
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+}
+
+.hero-container {
+    position: relative;
+}
+
+#order-button {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    background-color: var(--accent-color1);
+    font-size: 2rem;
+    border: none;
+    border-radius: 10px;
+}
+
+#order-button:hover {
+    transition: background-color 0.3s;
+    background-color: var(--accent-color2);
+}
+
+#summary {
+    border: 1px solid var(--accent-color1);
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#summary img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+#summary img:hover,
+#smoothies img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+#summary h2 {
+    font-size: 2.5rem;
+}
+
+#summary p {
+    line-height: 1.3rem;
+}
+
+#smoothies {
+    text-align: center;
+}
+
+#smoothies p {
+    line-height: 1.3rem;
+    padding: 10px;
+}
+
+#smoothies h2 {
+    font-size: 2rem;
+}
+
+#smoothies img {
+    border-radius: 5px;
+
+
+}
+
+#smoothie-1 {
+    background-color: var(--accent-color1);
+    border-radius: 5px;
+}
+
+#smoothie-2 {
+    background-color: var(--accent-color1);
+    border-radius: 5px;
+}
+
+#smoothie-3 {
+    background-color: var(--accent-color1);
+    border-radius: 5px;
+}
+
+#current-weather,
+#forecastSection {
+    text-align: center;
+}
+
+
+#forecastSection {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+#weather {
+    border: 1px solid var(--accent-color1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+
+    display: flex;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+
+.footer-logo img {
+    border-radius: 45%;
+
+}
+
+.footer-contact-details {
+    margin-left: 5px;
+    border-left: 1px solid black;
+    padding: 5px;
+}
+
+.footer-base {
+    margin-left: 5px;
+    border-left: 1px solid black;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+
+.socialmedia img {
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socialmedia img:hover {
+    transform: scale(1.2);
+}
+
+/* Order Page
+------------------------------------*/
+
+
+#form {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+#order-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#fieldset {
+    border: none;
+}
+
+.form {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #4caf50;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+input:required {
+    border-color: #922;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+#examples h2 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.example {
+    text-align: center;
+    background-color: var(--accent-color1);
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 5px;
+
+}
+
+.example img {
+    border-radius: 10px;
+
+    height: 300px;
+}
+
+.example img:hover {
+    box-shadow: 0 0 50px #333;
+}
+
+.example h3 {
+    font-size: 2rem;
+}
+
+.example p {
+    font-size: 1rem;
+}
