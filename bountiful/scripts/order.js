@@ -21,18 +21,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         <p><strong>Special Instructions:</strong> ${instructions || 'None'}</p>
     `;
 
-    // Fetch nutritional information for the selected fruits
+    // Fetch nutritional information for the selected fruits from the local JSON file
     const fruits = [choice1, choice2, choice3];
     const nutritionalInfoPromises = fruits.map(async (fruit) => {
-        const response = await fetch(`https://api.apis.guru/v2/specs/fruityvice.apis.guru/1.0.0/swagger.json`);
+        const response = await fetch('C:\Users\spenc\OneDrive\Desktop\WDD230\wdd230\bountiful\scripts\order.js');
         const data = await response.json();
-        const fruitInfo = data.paths['/fruit/{name}'].get.parameters[0].enum.includes(fruit) ?
-            await fetch(`https://api.apis.guru/v2/specs/fruityvice.apis.guru/1.0.0/swagger.json`)
-                .then(response => response.json())
-                .then(data => fetch(`https://api.apis.guru/v2/specs/fruityvice.apis.guru/1.0.0/swagger.json?fruitName=${fruit}`))
-                .then(response => response.json())
-            :
-            null;
+        const fruitInfo = data.find(fruitData => fruitData.name === fruit);
         return fruitInfo;
     });
 
@@ -41,11 +35,11 @@ document.addEventListener('DOMContentLoaded', async function () {
     // Calculate total nutrition
     const totalNutrition = nutritionalInfoArray.reduce((total, fruitInfo) => {
         if (fruitInfo) {
-            total.carbohydrates += fruitInfo.carbohydrates || 0;
-            total.protein += fruitInfo.protein || 0;
-            total.fat += fruitInfo.fat || 0;
-            total.sugar += fruitInfo.sugar || 0;
-            total.calories += fruitInfo.calories || 0;
+            total.carbohydrates += fruitInfo.nutritions.carbohydrates || 0;
+            total.protein += fruitInfo.nutritions.protein || 0;
+            total.fat += fruitInfo.nutritions.fat || 0;
+            total.sugar += fruitInfo.nutritions.sugar || 0;
+            total.calories += fruitInfo.nutritions.calories || 0;
         }
         return total;
     }, {

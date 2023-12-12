@@ -99,17 +99,21 @@
 ------------------------------------*/
     #order-main {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 1fr;
     }
 
-    #examples h2 {
-        margin-left: 100px;
-        grid-column: 2/3;
+
+    #order-form {
+        width: 360px;
+        padding: 0;
+        text-align: left;
+        margin-left: 0;
     }
 
     #examples {
         display: flex;
         padding: 3px;
+        grid-column: 2/3;
     }
 
     .example {
