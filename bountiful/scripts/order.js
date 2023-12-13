@@ -52,12 +52,13 @@ document.addEventListener('DOMContentLoaded', async function () {
  
  
     outputArea.innerHTML += `
-        <p><strong>Total Carbohydrates:</strong> ${totalNutrition.carbohydrates} g</p>
-        <p><strong>Total Protein:</strong> ${totalNutrition.protein} g</p>
-        <p><strong>Total Fat:</strong> ${totalNutrition.fat} g</p>
-        <p><strong>Total Sugar:</strong> ${totalNutrition.sugar} g</p>
-        <p><strong>Total Calories:</strong> ${totalNutrition.calories} kcal</p>
-    `;
+    <p><strong>Total Carbohydrates:</strong> ${Math.round(totalNutrition.carbohydrates)} g</p>
+    <p><strong>Total Protein:</strong> ${Math.round(totalNutrition.protein)} g</p>
+    <p><strong>Total Fat:</strong> ${Math.round(totalNutrition.fat)} g</p>
+    <p><strong>Total Sugar:</strong> ${Math.round(totalNutrition.sugar)} g</p>
+    <p><strong>Total Calories:</strong> ${Math.round(totalNutrition.calories)} kcal</p>
+`;
+
  
  
     const orderDate = new Date();
