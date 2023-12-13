@@ -150,6 +150,11 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
+#order-button a {
+    text-decoration: none;
+    color: black;
+}
+
 #order-button:hover {
     transition: background-color 0.3s;
     background-color: var(--accent-color2);
