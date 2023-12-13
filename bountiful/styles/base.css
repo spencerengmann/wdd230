@@ -378,3 +378,41 @@ p {
 .example p {
     font-size: 1rem;
 }
+
+iframe {
+    width: 98%;
+    border-radius: 10px;
+}
+
+#company-info {
+    border: 1px solid var(--accent-color1);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#company-info img {
+    border-radius: 5px;
+}
+
+#company-info p {
+    line-height: 1.4rem;
+    text-align: left;
+}
+
+#area-info {
+    border: 1px solid var(--accent-color1);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#area-info img {
+    border-radius: 5px;
+}
+
+#area-info p {
+    text-align: left;
+    line-height: 1.4rem;
+}
