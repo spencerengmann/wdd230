@@ -393,6 +393,9 @@ iframe {
 
 #company-info img {
     border-radius: 5px;
+
+
+
 }
 
 #company-info p {
@@ -410,7 +413,29 @@ iframe {
 
 #area-info img {
     border-radius: 5px;
+
+
 }
+
+#orderconf-main {
+    border: 1px solid var(--accent-color1);
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#confirmation {
+    border-radius: 10px;
+    border: 1px dashed black;
+    width: 60%;
+    align-items: center;
+    margin: auto;
+
+
+}
+
+
 
 #area-info p {
     text-align: left;

@@ -21,10 +21,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         <p><strong>Special Instructions:</strong> ${instructions || 'None'}</p>
     `;
 
-    // Fetch nutritional information for the selected fruits from the local JSON file
+   
     const fruits = [choice1, choice2, choice3];
     const nutritionalInfoPromises = fruits.map(async (fruit) => {
-        const response = await fetch('C:\Users\spenc\OneDrive\Desktop\WDD230\wdd230\bountiful\scripts\order.js');
+        const response = await fetch('/bountiful/data/fruityvice.json');
         const data = await response.json();
         const fruitInfo = data.find(fruitData => fruitData.name === fruit);
         return fruitInfo;
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     const nutritionalInfoArray = await Promise.all(nutritionalInfoPromises);
 
-    // Calculate total nutrition
+ 
     const totalNutrition = nutritionalInfoArray.reduce((total, fruitInfo) => {
         if (fruitInfo) {
             total.carbohydrates += fruitInfo.nutritions.carbohydrates || 0;
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         calories: 0
     });
 
-    // Update the UI with the total nutrition information
+ 
     outputArea.innerHTML += `
         <p><strong>Total Carbohydrates:</strong> ${totalNutrition.carbohydrates} g</p>
         <p><strong>Total Protein:</strong> ${totalNutrition.protein} g</p>
@@ -59,12 +59,12 @@ document.addEventListener('DOMContentLoaded', async function () {
         <p><strong>Total Calories:</strong> ${totalNutrition.calories} kcal</p>
     `;
 
-    // Get order date and display pickup time
+ 
     const orderDate = new Date();
     const pickupTime = new Date(orderDate.getTime() + 30 * 60 * 1000); // 30 minutes from now
     const pickupTimeString = pickupTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
     pickupTimeElement.innerText = `Pickup time: ${pickupTimeString}`;
 
-    // Leave a review link (replace '#' with the actual link)
+    
     document.getElementById('leave-review').href = '#';
 });
