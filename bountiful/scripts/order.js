@@ -21,15 +21,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         <p><strong>Special Instructions:</strong> ${instructions || 'None'}</p>
     `;
  
+   
     const fruits = [choice1, choice2, choice3];
     const nutritionalInfoPromises = fruits.map(async (fruit) => {
-        const response = await fetch('fruityvice.json');
+        const response = await fetch('https://spencerengmann.github.io/wdd230/bountiful/data/fruityvice.json');
         const data = await response.json();
         const fruitInfo = data.find(fruitData => fruitData.name === fruit);
         return fruitInfo;
     });
  
     const nutritionalInfoArray = await Promise.all(nutritionalInfoPromises);
+ 
  
     const totalNutrition = nutritionalInfoArray.reduce((total, fruitInfo) => {
         if (fruitInfo) {
@@ -48,18 +50,21 @@ document.addEventListener('DOMContentLoaded', async function () {
         calories: 0
     });
  
+ 
     outputArea.innerHTML += `
-    <p><strong>Total Carbohydrates:</strong> ${Math.round(totalNutrition.carbohydrates)} g</p>
-    <p><strong>Total Protein:</strong> ${Math.round(totalNutrition.protein)} g</p>
-    <p><strong>Total Fat:</strong> ${Math.round(totalNutrition.fat)} g</p>
-    <p><strong>Total Sugar:</strong> ${Math.round(totalNutrition.sugar)} g</p>
-    <p><strong>Total Calories:</strong> ${Math.round(totalNutrition.calories)} kcal</p>
-`;
+        <p><strong>Total Carbohydrates:</strong> ${totalNutrition.carbohydrates} g</p>
+        <p><strong>Total Protein:</strong> ${totalNutrition.protein} g</p>
+        <p><strong>Total Fat:</strong> ${totalNutrition.fat} g</p>
+        <p><strong>Total Sugar:</strong> ${totalNutrition.sugar} g</p>
+        <p><strong>Total Calories:</strong> ${totalNutrition.calories} kcal</p>
+    `;
+ 
  
     const orderDate = new Date();
     const pickupTime = new Date(orderDate.getTime() + 30 * 60 * 1000); // 30 minutes from now
     const pickupTimeString = pickupTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
     pickupTimeElement.innerText = ` ${pickupTimeString}`;
  
+   
     document.getElementById('leave-review').href = '#';
 });
