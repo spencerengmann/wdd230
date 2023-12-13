@@ -7,10 +7,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     const choice2 = urlParams.get('choice2');
     const choice3 = urlParams.get('choice3');
     const instructions = urlParams.get('instructions');
-
+ 
     const outputArea = document.getElementById('output-area');
     const pickupTimeElement = document.getElementById('pickup-time');
-
+ 
     outputArea.innerHTML = `
         <p><strong>First Name:</strong> ${firstName}</p>
         <p><strong>Email:</strong> ${email}</p>
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         <p><strong>3rd Fruit:</strong> ${choice3}</p>
         <p><strong>Special Instructions:</strong> ${instructions || 'None'}</p>
     `;
-
+ 
    
     const fruits = [choice1, choice2, choice3];
     const nutritionalInfoPromises = fruits.map(async (fruit) => {
@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         const fruitInfo = data.find(fruitData => fruitData.name === fruit);
         return fruitInfo;
     });
-
+ 
     const nutritionalInfoArray = await Promise.all(nutritionalInfoPromises);
-
+ 
  
     const totalNutrition = nutritionalInfoArray.reduce((total, fruitInfo) => {
         if (fruitInfo) {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         sugar: 0,
         calories: 0
     });
-
+ 
  
     outputArea.innerHTML += `
         <p><strong>Total Carbohydrates:</strong> ${totalNutrition.carbohydrates} g</p>
@@ -58,13 +58,13 @@ document.addEventListener('DOMContentLoaded', async function () {
         <p><strong>Total Sugar:</strong> ${totalNutrition.sugar} g</p>
         <p><strong>Total Calories:</strong> ${totalNutrition.calories} kcal</p>
     `;
-
+ 
  
     const orderDate = new Date();
     const pickupTime = new Date(orderDate.getTime() + 30 * 60 * 1000); // 30 minutes from now
     const pickupTimeString = pickupTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-    pickupTimeElement.innerText = `Pickup time: ${pickupTimeString}`;
-
-    
+    pickupTimeElement.innerText = ` ${pickupTimeString}`;
+ 
+   
     document.getElementById('leave-review').href = '#';
 });
