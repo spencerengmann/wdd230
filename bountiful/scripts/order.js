@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', async function () {
    
     const fruits = [choice1, choice2, choice3];
     const nutritionalInfoPromises = fruits.map(async (fruit) => {
-        const response = await fetch('https://spencerengmann.github.io/wdd230/bountiful/data/fruityvice.json');
+        const response = await fetch('./data/fruityvice.json');
         const data = await response.json();
         const fruitInfo = data.find(fruitData => fruitData.name === fruit);
         return fruitInfo;
