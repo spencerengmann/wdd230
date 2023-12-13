@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         <p><strong>Special Instructions:</strong> ${instructions || 'None'}</p>
     `;
  
-   
     const fruits = [choice1, choice2, choice3];
     const nutritionalInfoPromises = fruits.map(async (fruit) => {
         const response = await fetch('/bountiful/data/fruityvice.json');
@@ -31,7 +30,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     });
  
     const nutritionalInfoArray = await Promise.all(nutritionalInfoPromises);
- 
  
     const totalNutrition = nutritionalInfoArray.reduce((total, fruitInfo) => {
         if (fruitInfo) {
@@ -50,7 +48,6 @@ document.addEventListener('DOMContentLoaded', async function () {
         calories: 0
     });
  
- 
     outputArea.innerHTML += `
     <p><strong>Total Carbohydrates:</strong> ${Math.round(totalNutrition.carbohydrates)} g</p>
     <p><strong>Total Protein:</strong> ${Math.round(totalNutrition.protein)} g</p>
@@ -58,13 +55,11 @@ document.addEventListener('DOMContentLoaded', async function () {
     <p><strong>Total Sugar:</strong> ${Math.round(totalNutrition.sugar)} g</p>
     <p><strong>Total Calories:</strong> ${Math.round(totalNutrition.calories)} kcal</p>
 `;
-
  
     const orderDate = new Date();
     const pickupTime = new Date(orderDate.getTime() + 30 * 60 * 1000); // 30 minutes from now
     const pickupTimeString = pickupTime.toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
     pickupTimeElement.innerText = ` ${pickupTimeString}`;
  
-   
     document.getElementById('leave-review').href = '#';
 });
