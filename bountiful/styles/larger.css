@@ -11,7 +11,12 @@
     nav ul li a {
         text-align: center;
     }
-
+    #hero img {
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+    
     .menu-show,
     .menu-hide,
     .menu-show.showing,
@@ -19,7 +24,15 @@
         display: none;
     }
 
-
+    #order-button {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        background-color: var(--accent-color1);
+        font-size: 2rem;
+        border: none;
+        border-radius: 10px;
+    }
 
     #hero {
         grid-column: 1/3;

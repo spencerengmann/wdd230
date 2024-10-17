@@ -10,7 +10,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffffff;
     max-width: 1200px;
-    padding: 10px;
+    padding: 2px;
     margin: auto;
 
 
@@ -129,10 +129,12 @@ nav ul li a:hover {
     background-color: var(--accent-color2);
     border-radius: 10px;
 }
-
+#hero{
+    text-align: center;
+}
 #hero img {
     width: 100%;
-
+    margin: 0 auto;
     border-radius: 8px;
 }
 
@@ -145,9 +147,10 @@ nav ul li a:hover {
     bottom: 50%;
     right: 50%;
     background-color: var(--accent-color1);
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: none;
     border-radius: 10px;
+    padding: 5px;
 }
 
 #order-button a {

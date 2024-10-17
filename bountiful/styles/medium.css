@@ -9,7 +9,12 @@
     footer {
         display: flex
     }
-
+    #hero img {
+        width: auto;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+    
 
     #order-form {
         background-color: #fff;
@@ -19,6 +24,15 @@
         width: 600px;
         margin-left: 20%;
 
+    }
+    #order-button {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        background-color: var(--accent-color1);
+        font-size: 2rem;
+        border: none;
+        border-radius: 10px;
     }
 
     input,
