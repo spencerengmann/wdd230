@@ -1,4 +1,9 @@
 @media screen and (min-width: 1200px) {
+    header h1 {
+
+        text-align: center;
+        font-size: 3.5rem;
+    }
     #nav-menu {
         display: flex;
     }
@@ -52,6 +57,10 @@
     #summary img {
         grid-column: 1/2;
         grid-row: 1/2;
+        width:75%;
+        height:100%;
+        margin:0 auto;
+        margin-top: 30px;
 
     }
 
